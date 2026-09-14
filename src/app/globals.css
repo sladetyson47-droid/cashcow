@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #101010;
+  --panel: #161616;
+  --panel-2: #1c1c1c;
+  --line: #2a2a2a;
+  --line-2: #3a3a3a;
+  --fg: #f4f4f0;
+  --fg-2: #c9c9c2;
+  --muted: #9a9a92;
+  --muted-2: #6a6a64;
+  --lime: #d4ff3f;
+  --orange: #ff7a3f;
+  --yellow: #ffd23f;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-fg: var(--fg);
+  --color-fg-2: var(--fg-2);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-lime: var(--lime);
+  --color-orange: var(--orange);
+  --color-yellow: var(--yellow);
+  --font-sans: 'Archivo', system-ui, sans-serif;
+  --font-narrow: 'Archivo Narrow', 'Archivo', sans-serif;
+}
+
+html, body { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Archivo', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+.num { font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+.label {
+  font-family: 'Archivo Narrow', 'Archivo', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+}
